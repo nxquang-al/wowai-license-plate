@@ -90,4 +90,5 @@ Here is an example of successful response:
 }
 ```
 Note that *image_output* is a base64 string encode for the final image as below:
+
 ![licenseplate1_output](https://user-images.githubusercontent.com/79528257/200648494-271f1d53-7181-43f3-a6ea-1a6796870163.png)
