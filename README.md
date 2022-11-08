@@ -1,5 +1,5 @@
 ﻿# wowai-license-plate
-## INSTALLATION
+## 1. INSTALLATION
 ### a. Build from source
 ```
 # Create and activate a virtual environment
@@ -31,7 +31,7 @@ $ sudo docker run --name license-plate -p 5000:5000 wowai/license-plate
 ```
 The API is then available at http://0.0.0.0:5000/
 
-## API ENDPOINTS
+## 2. API ENDPOINTS
 ### 1. POST /license-plate
 Detect and extract license plates from image
 #### Request body
@@ -51,8 +51,9 @@ car.license_plate | [x,y,x,y,...] - the 4 points of detected license plates| [in
 car.license_plate_text | The text extracted from license plates | string|
 image_output| Output image with extracted information| base64 string|
 
-## DEMO
+## 3. DEMO
 ```
+Here is an example of successful response:
 {
     "message": "successful",
     "results": {
@@ -86,3 +87,4 @@ image_output| Output image with extracted information| base64 string|
     }
 }
 ```
+Note that *img_output* is a base64 string encode for labeled image
