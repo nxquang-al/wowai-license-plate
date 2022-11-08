@@ -33,8 +33,9 @@ $ sudo docker run --name license-plate -p 5000:5000 wowai/license-plate
 The API is then available at http://0.0.0.0:5000/
 
 ## 2. API ENDPOINTS
-### 1. POST /license-plate
+### 1. POST /license_plate
 Detect and extract license plates from image
+Request URL: http://0.0.0.0:5000/license_plate
 #### Request body
 Key | Description | Type | Note
 |--------|----------|--------|--------|
