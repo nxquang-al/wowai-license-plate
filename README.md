@@ -34,8 +34,8 @@ The API is then available at http://0.0.0.0:5000/
 
 ## 2. API ENDPOINTS
 ### 1. POST /license_plate
-Detect and extract license plates from image
-Request URL: http://0.0.0.0:5000/license_plate
+Detect and extract license plates from image <br/>
+Request URL: http://0.0.0.0:5000/license_plate <br/>
 #### Request body
 Key | Description | Type | Note
 |--------|----------|--------|--------|
