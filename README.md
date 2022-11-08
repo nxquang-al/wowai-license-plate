@@ -1,5 +1,5 @@
 ﻿# wowai-license-plate
-## Installation
+## INSTALLATION
 ### a. Build from source
 ```
 # Create and activate a virtual environment
@@ -31,16 +31,16 @@ $ sudo docker run --name license-plate -p 5000:5000 wowai/license-plate
 ```
 The API is then available at http://0.0.0.0:5000/
 
-## API Endpoints
+## API ENDPOINTS
 ### 1. POST /license-plate
-Detect and extract license plates from images
+Detect and extract license plates from image
 #### Request body
 Key | Description | Type | Note
 |--------|----------|--------|--------|
-images| Input images, which contains cars with license plates| multipart/form-data| required|
+image| Input image, which contains cars with license plates| multipart/form-data| required|
 
 #### Response
-Successful response will return a json with following fields:
+Successful response (Code 200) will return a json with following fields:
 Key | Description | Type |
 |--------|----------|--------|
 no_of_cars| Number of cars detected| int|
@@ -50,3 +50,39 @@ car.bot_right| [x,y] - coordinate of the bottom right of bounding box | [float, 
 car.license_plate | [x,y,x,y,...] - the 4 points of detected license plates| [int]|
 car.license_plate_text | The text extracted from license plates | string|
 image_output| Output image with extracted information| base64 string|
+
+## DEMO
+```
+{
+    "message": "successful",
+    "results": {
+        "no_of_cars": 1,
+        "cars": [
+            {
+                "class": "car",
+                "top_left": [
+                    498.5275260000001,
+                    731.8284255
+                ],
+                "bot_right": [
+                    1398.737178,
+                    1249.8060645
+                ],
+                "prob": null,
+                "license_plate": [
+                    794,
+                    1068,
+                    1037,
+                    1066,
+                    1037,
+                    1123,
+                    794,
+                    1125
+                ],
+                "license_plate_text": "MPC7772"
+            }
+        ],
+        "image_output": "data:image/png;base64,iVBOR..."
+    }
+}
+```
