@@ -1,5 +1,6 @@
 ﻿# wowai-license-plate
 ## 1. INSTALLATION
+There are two methods to install and run the api: from source or via Docker
 ### a. Build from source
 ```
 # Create and activate a virtual environment
@@ -52,8 +53,8 @@ car.license_plate_text | The text extracted from license plates | string|
 image_output| Output image with extracted information| base64 string|
 
 ## 3. DEMO
-```
 Here is an example of successful response:
+```
 {
     "message": "successful",
     "results": {
@@ -87,4 +88,4 @@ Here is an example of successful response:
     }
 }
 ```
-Note that *img_output* is a base64 string encode for labeled image
+Note that *img_output* is a base64 string encode for the final image as below:
