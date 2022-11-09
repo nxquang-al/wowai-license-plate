@@ -35,7 +35,7 @@ The API is then available at http://0.0.0.0:5000/
 **Note:** the original repository is developed and run on Ubuntu 22.04 LTS and haven't been tested on any other OS yet.
 
 ## 2. API ENDPOINTS
-### 1. POST /license_plate
+### 2.1 POST /license_plate
 Detect and extract license plates from image <br/>
 Request URL: http://0.0.0.0:5000/license_plate <br/>
 #### Request body
