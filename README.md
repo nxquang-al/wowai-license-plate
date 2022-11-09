@@ -32,7 +32,7 @@ $ docker run --name license-plate -p 5000:5000 wowai/license-plate
 ```
 The API is then available at http://0.0.0.0:5000/
 
-**Note:** the original repository is developed and run on Ubuntu 22.04 LTS
+**Note:** the original repository is developed and run on Ubuntu 22.04 LTS and haven't been tested on any other OS yet.
 
 ## 2. API ENDPOINTS
 ### 1. POST /license_plate
