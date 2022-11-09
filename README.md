@@ -27,8 +27,8 @@ $ python app.py
 
 ### b. Install via Docker
 ```
-$ sudo docker build -t wowai/license-plate .
-$ sudo docker run --name license-plate -p 5000:5000 wowai/license-plate
+$ docker build -t wowai/license-plate .
+$ docker run --name license-plate -p 5000:5000 wowai/license-plate
 ```
 The API is then available at http://0.0.0.0:5000/
 
