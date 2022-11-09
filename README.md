@@ -49,6 +49,7 @@ no_of_cars| Number of cars detected| int|
 cars| List of cars detected and their information| list| 
 car.top_left| [x,y] - coordinate of the top left of bounding box | [float, float]|
 car.bot_right| [x,y] - coordinate of the bottom right of bounding box | [float, float]|
+car.prob| Probability of prediction, can be null| float|
 car.license_plate | [x,y,x,y,...] - the 4 points of detected license plates| [int]|
 car.license_plate_text | The text extracted from license plates | string|
 image_output| Output image with extracted information| base64 string|
