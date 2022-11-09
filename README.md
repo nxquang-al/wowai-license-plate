@@ -5,7 +5,7 @@ There are two methods to install and run the api: from source or via Docker
 ```
 # Create and activate a virtual environment
 $ conda create -n license_plate python=3.10 -y
-$ source activate license_plate
+$ conda activate license_plate
  
 
 # Install dependencies
